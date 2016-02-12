@@ -1,0 +1,67 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 100%;
+	line-height: 150%;
+	font-family: 'Raleway', sans-serif;
+	background: url('../images/pattern.png');
+	background-size: cover;
+}
+
+#info_wrapper {
+	width: 60%;
+	margin: 1em auto;
+	background: white;
+	padding: 1em;
+	border: 10px solid #D82705;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 125%;
+	font-family: 'Josefin Slab', serif;
+}
+
+h2 {
+	font-size: 1.3em;
+	line-height: 125%;
+	border-bottom: 1px black dotted;
+	margin-bottom: .6em;
+	padding-top: .8em;
+	font-family: 'Josefin Slab', serif;
+}
+
+p {
+	font-size: .8em;
+}
+
+a {
+	font-size: .9em;
+	font-weight: bold;
+	color: #9AA683;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px #9AA683 solid;
+	color: #9AA683;
+	font-style: bold;
+	font-size: 1em;
+}
+
+ul {
+	margin-bottom: .6em;
+}
+
+li {
+	list-style-type: none;
+	font-size: .8em;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
