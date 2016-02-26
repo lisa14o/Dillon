@@ -87,7 +87,17 @@ img.mobile {
 	width: 25%;
 	float: left;
 	margin-left: 2.5em;
-	
+}
+
+.vis_Des {
+	width: 99%;
+	float: left;
+	display: inline-block;
+	padding-top: 2em;
+}
+
+.vis_Des h2 {
+	border-bottom: none;
 }
 
 ul.assi {
