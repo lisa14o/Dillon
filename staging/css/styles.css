@@ -90,14 +90,30 @@ img.mobile {
 }
 
 .vis_Des {
+	width: 100%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	overflow: hidden;
+}
+
+.vis_Des h2 {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+img.inner {
 	width: 50%;
 	float: left;
 	display: inline-block;
 	padding-top: 2em;
 }
 
-.vis_Des h2 {
-	border-bottom: none;
+img.home {
+	width: 50%;
+	float: left;
+	display: inline-block;
+	padding-top: 2em;
 }
 
 ul.assi {
