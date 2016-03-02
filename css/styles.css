@@ -45,6 +45,33 @@ li a:hover {
 	color: #DA3134;
 }
 
+ul#drawing_items {
+	display: flex;
+	width: 100%;
+	height: 30px;
+	font-family: 'Baron Neue';
+	font-size: .8em;
+	border-bottom: 1px solid black;
+}
+
+ul#drawing_items li {
+	width: 180px;
+}
+
+ul#drawing_items li:hover {
+	background-color: #EFC879;
+	color: #DA3134;
+}
+
+ul#drawing_items li a:hover {
+	background-color: #EFC879;
+	color: #DA3134;
+}
+
+ul#drawing_items li:first-of-type {
+	margin-left: 100px;
+}
+
 img {
 	max-width: 100%;
 	display: block
@@ -61,7 +88,7 @@ img {
 	flex-flow: row wrap;
 }
 
-.drawing_wrapper {
+#drawing_wrapper {
 	width: 960px;
 	margin: 2em auto;
 	overflow: hidden;
@@ -72,10 +99,52 @@ img {
 	flex-flow: row wrap;
 }
 
+.inner_about {
+	width: 80%;
+	margin: 0 auto;
+}
+
 .row_four {
 	display: flex;
 	width: 23%;
 	height: 200px;
+	margin-top: 1em;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.row_five {
+	display: flex;
+	width: 18%;
+	height: 130px;
+	margin-top: 1em;
+}
+
+.stack {
+	width: 24%;
+	margin-top: 1em;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+}
+
+.two_stack {
+	display: flex;
+	width: 98%;
+	height: 200px;
+}
+
+.two_stack:last-of-type {
+	display: flex;
+	width: 98%;
+	height: 200px;
+	margin-top: 1em;
 }
 
 .flex1 {
@@ -92,6 +161,10 @@ img {
 
 .flex4 {
 	border: 2px solid #8CA8D9;
+}
+
+.flex5 {
+	border: 2px solid #647433;
 }
 
 .row_two {
