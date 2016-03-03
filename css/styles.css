@@ -74,7 +74,7 @@ li a:hover {
 	color: #DA3134;
 }
 
-ul#drawing_items {
+ul#sub_items {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -90,22 +90,27 @@ ul#drawing_items {
 	        align-items: center;
 }
 
-ul#drawing_items li {
+ul#sub_items li {
 	width: 180px;
 }
 
-ul#drawing_items li:hover {
+ul#sub_items li:hover {
 	background-color: #EFC879;
 	color: #DA3134;
 }
 
-ul#drawing_items li a:hover {
+ul#sub_items li a:hover {
 	background-color: #EFC879;
 	color: #DA3134;
 }
 
-ul#drawing_items li:first-of-type {
+ul#sub_items li:first-of-type {
 	margin-left: 100px;
+}
+
+li.hightlight {
+	background-color: #EFC879;
+	color: #DA3134;
 }
 
 /*----------MAIN AREA-----------*/
@@ -136,6 +141,31 @@ ul#drawing_items li:first-of-type {
 }
 
 #drawing_wrapper {
+	width: 960px;
+	margin: 1em auto;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+}
+
+#inner_wrapper {
 	width: 960px;
 	margin: 1em auto;
 	overflow: hidden;

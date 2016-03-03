@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Dillon Drawing</title>
+<title>Dillon Video</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css" >
 <script src="js/base.min.js"></script>
 <script src="js/nav_hightlight.js"></script>
@@ -28,43 +28,21 @@
 	</header>
 
 		<ul id="sub_items">
-			<li class="highlight"><a href="illustrations.html">ILLUSTRATIONS</a></li>
-			<li><a href="posters.html">POSTERS</a></li>
-			<li><a href="stills.html">ANIMATION STILLS</a></li>
-			<li><a href="comics.html">COMICS</a></li>
+			<li><a href="animation.html">ANIMATION</a></li>
+			<li><a href="documentary.html">DOCUMENTARY</a></li>
 		</ul>
 	
 	
 	<div id="inner_wrapper">
 
 		<div class="inner_about">
-			<h1>ILLUSTRATIONS</h1>
+			<h1>ANIMATION</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu odio pretium, viverra tellus vitae, tristique nunc. Fusce ligula tortor, tempus tempus vehicula nec, viverra eu erat. Donec pellentesque ut elit ac laoreet. Aenean hendrerit ligula interdum dolor maximus sagittis. Aliquam rhoncus sapien arcu, et vehicula lorem rutrum feugiat. Nulla mattis orci nec ultricies molestie. Aliquam feugiat facilisis est vel vulputate. Aliquam eleifend tortor ac neque lacinia porttitor. Vivamus lacinia dapibus justo, ac eleifoend ipsum tristique nec. Fusce molestie arcu sed viverra egestas.</p>
 		</div><!--end inner about-->
 
-		<div class="row">
-			<div class="row_five flex1"><img src="images/hiking.jpg" alt="hiking"></div>
-			<div class="row_five flex2"><img src="images/robots.jpg" alt="robots"></div>
-			<div class="row_five flex3"><img src="images/cat_lion.jpg" alt="lion"></div>
-			<div class="row_five flex4"><img src="images/magician.jpg" alt="magic"></div>
-			<div class="row_five flex5"><img src="images/robots.jpg" alt="robots"></div>
-		</div><!--end row-->
+		<div class="video flex3"><iframe src="https://www.youtube.com/embed/EUQAcj2bxXk" frameborder="0" allowfullscreen></iframe></div><!--end video-->
 
-		<div class="row_two flex4"><img src="images/small_bike.jpg" alt="bike"></div>
-		<div class="stack">
-			<div class="two_stack flex1"><img src="images/cat_lion.jpg" alt="lion"></div>
-			<div class="two_stack flex4"><img src="images/magician.jpg" alt="magic"></div>
-		</div><!--end  stack-->
-
-		<div class="stack">
-			<div class="two_stack flex3"><img src="images/cat_lion.jpg" alt="lion"></div>
-			<div class="two_stack flex2"><img src="images/magician.jpg" alt="magic"></div>
-		</div><!--end  stack-->
-
-		<div class="row_four flex1"><img src="images/hiking.jpg" alt="hiking"></div>
-		<div class="row_four flex2"><img src="images/robots.jpg" alt="robots"></div>
-		<div class="row_four flex3"><img src="images/cat_lion.jpg" alt="lion"></div>
-		<div class="row_four flex4"><img src="images/magician.jpg" alt="magic"></div>
+		<div class="video flex3"><iframe src="https://www.youtube.com/embed/EUQAcj2bxXk" frameborder="0" allowfullscreen></iframe></div><!--end video-->
 		
 	</div><!--end home wrapper-->
 
@@ -88,18 +66,12 @@ $('#sub_items').find('a').on('click', function(e){
 	var $desc = $('#inner_wrapper');
 
 	switch ($(this).attr('href')) {
-		case 'illustrations.html' :
-			$desc.load('fragments/illustrations.html');
+		case 'animation.html' :
+			$desc.load('fragments/animation.html');
 			break;
-		case 'posters.html' :
-			$desc.load('fragments/posters.html');
+		case 'documentary.html' :
+			$desc.load('fragments/documentary.html');
 			break;
-		case 'stills.html' :
-			$desc.load('fragments/stills.html');
-			break;
-		case 'comics.html' :
-			$desc.load('fragments/comics.html');
-			break;			
 	}
 
 });
