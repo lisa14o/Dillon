@@ -15,6 +15,26 @@ header {
 	border-bottom: 1px solid black;
 }
 
+img {
+	max-width: 100%;
+	display: block
+}
+
+h1 {
+	font-family: 'Baron Neue';
+	text-align: center;
+	color: #647433;
+}
+
+h2 {
+	font-family: 'Baron Neue';
+	color: #8CA8D9;
+	font-size: 1.5em;
+	padding-top: 1em;
+}
+
+/*-------------HEADER-------------*/
+
 img.logo {
 	display: flex;
 	background-color: blue;
@@ -52,6 +72,7 @@ ul#drawing_items {
 	font-family: 'Baron Neue';
 	font-size: .8em;
 	border-bottom: 1px solid black;
+	align-items: center;
 }
 
 ul#drawing_items li {
@@ -72,10 +93,7 @@ ul#drawing_items li:first-of-type {
 	margin-left: 100px;
 }
 
-img {
-	max-width: 100%;
-	display: block
-}
+/*----------MAIN AREA-----------*/
 
 .home_wrapper {
 	width: 960px;
@@ -90,7 +108,7 @@ img {
 
 #drawing_wrapper {
 	width: 960px;
-	margin: 2em auto;
+	margin: 1em auto;
 	overflow: hidden;
 	display: flex;
 	justify-content: space-between;
@@ -100,21 +118,81 @@ img {
 }
 
 .inner_about {
-	width: 80%;
-	margin: 0 auto;
+	width: 100%;
+	margin-top: .5em;
+}
+
+.inner_about p {
+	padding-top: .5em;
+	text-align: justify;
+}
+
+.about {
+	display: flex;
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	flex-direction: column;
+}
+
+.about p {
+	font-family: sans-serif;
+	padding-top: .8em;
+	text-align: justify;
+}
+
+.posters {
+	display: flex;
+	margin: 1em auto;
+	width: 500px;
+}
+
+.one_poster {
+	display: flex;
+	width: 500px;
+	height: auto;
+}
+
+p.film_short {
+	font-size: .9em;
+	line-height: 1.4em;
+	font-weight: bold;
+	text-align: justify;
+}
+
+.mixed_row {
+	display: flex;
+	width: 100%;
+	margin-top: 1em;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+}
+
+.mixed_1 {
+	display: flex;
+	width: 48.5%;
+}
+
+.mixed_2, 
+.mixed_3 {
+	display: flex;
+	width: 23.5%;
+	height: 200px;
+}
+
+.row_two {
+	display: flex;
+	width: 48.5%;
+	margin-top: 1em;
 }
 
 .row_four {
 	display: flex;
-	width: 23%;
+	width: 24%;
 	height: 200px;
 	margin-top: 1em;
-}
-
-.row {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
 }
 
 .row_five {
@@ -122,16 +200,6 @@ img {
 	width: 18%;
 	height: 130px;
 	margin-top: 1em;
-}
-
-.stack {
-	width: 24%;
-	margin-top: 1em;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	flex-wrap: wrap;
-	flex-flow: row wrap;
 }
 
 .two_stack {
@@ -145,6 +213,22 @@ img {
 	width: 98%;
 	height: 200px;
 	margin-top: 1em;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.stack {
+	width: 24%;
+	margin-top: 1em;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
 }
 
 .flex1 {
@@ -167,12 +251,6 @@ img {
 	border: 2px solid #647433;
 }
 
-.row_two {
-	display: flex;
-	width: 48.5%;
-	margin-top: 1em;
-}
-
 p.excerpt {
 	font-family: 'Nord';
 	font-weight: regular;
@@ -190,6 +268,11 @@ p.excerpt {
 	display: flex;
 }
 
+iframe.home_player {
+	width: 100%;
+	height: 100px;	
+}
+
 iframe {
 	width: 100%;
 	height:710px;
@@ -203,30 +286,11 @@ iframe {
 	display: flex;
 }
 
-iframe.home_player {
-	width: 100%;
-	height: 100px;	
-}
 
-.about {
-	display: flex;
-	width: 100%;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	flex-direction: column;
-}
 
-.about p {
-	font-family: sans-serif;
-	padding-top: .8em;
-	text-align: justify;
-}
 
-h1 {
-	font-family: 'Baron Neue';
-	text-align: center;
-	color: #647433;
-}
+
+
 
 
 
