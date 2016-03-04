@@ -108,9 +108,16 @@ ul#sub_items li:first-of-type {
 	margin-left: 100px;
 }
 
-li.hightlight {
+
+ul#drawing_items li:first-of-type:hover {
 	background-color: #EFC879;
 	color: #DA3134;
+}
+
+img {
+	max-width: 100%;
+	display: block
+>>>>>>> Stashed changes
 }
 
 /*----------MAIN AREA-----------*/
