@@ -1,3 +1,11 @@
+/*
+	red = #DA3134;
+	green = #647433;
+	yellow = #EFC879;
+	blue = #8CA8D9;
+*/
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -26,7 +34,7 @@ img {
 h1 {
 	font-family: 'Baron Neue';
 	text-align: center;
-	color: #647433;
+	color: #8CA8D9;
 }
 
 h2 {
@@ -59,19 +67,23 @@ ul.menu {
 	font-size: .8em;
 }
 
-li {
+ul.menu li {
 	text-align: center;
 	width: 25%;
 	list-style-type: none;
 }
 
-li a {
+ul.menu li a {
 	text-decoration: none;
 	color: black;
 }
 
-li a:hover {
+ul.menu li a:hover {
 	color: #DA3134;
+}
+
+ul.menu li a.active{
+ 	color: #DA3134;
 }
 
 ul#sub_items {
@@ -89,6 +101,7 @@ ul#sub_items {
 ul#sub_items li {
 	width: 180px;
 	height:30px;
+	list-style-type: none;
 }
 
 ul#sub_items li a {
@@ -96,15 +109,17 @@ ul#sub_items li a {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	text-decoration: none;
 	align-items: center;
 	justify-content: center;
 	width: 180px;
 	height:30px;
+	color: black;
 }
 
 ul#sub_items li a:hover {
-	background-color: #EFC879;
-	color: #DA3134;
+	background-color: #8CA8D9;
+	color: #EFC879;
 }
 
 img {
