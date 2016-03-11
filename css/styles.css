@@ -32,7 +32,7 @@ img {
 }
 
 h1 {
-	font-family: 'Baron Neue';
+	font-family: 'Azedo', light;
 	text-align: center;
 	color: #8CA8D9;
 }
@@ -61,10 +61,11 @@ ul.menu {
 	display: -ms-flexbox;
 	display: flex;
 	width: 400px;
-	height: 20px;
+	
 	margin-top: 40px;
-	font-family: 'Baron Neue';
-	font-size: .8em;
+	font-family: 'Azedo', light;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 ul.menu li {
