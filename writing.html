@@ -94,11 +94,14 @@ $('#sub_items').find('a').on('click', function(e){
 	var $desc = $('#inner_wrapper');
 
 	switch ($(this).attr('href')) {
-		case 'john_dillon.html' :
-			$desc.load('fragments/john_dillon.html');
+		case 'fiction.html' :
+			$desc.load('fragments/fiction.html');
 			break;
-		case 'other_music.html' :
-			$desc.load('fragments/other_music.html');
+		case 'essays.html' :
+			$desc.load('fragments/essays.html');
+			break;
+		case 'lyrics.html' :
+			$desc.load('fragments/lyrics.html');
 			break;
 	}
 

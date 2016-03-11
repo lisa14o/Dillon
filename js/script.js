@@ -28,9 +28,10 @@
 //    $('.menu li a.active').removeClass('active');
  //   $(this).addClass('active');
 //});
-
+jQuery(document).ready(function($)
  $('ul.menu li a').click(function(e) {
         e.preventDefault();
         $('a').removeClass('active');
         $(this).addClass('active');
     });
+ });
