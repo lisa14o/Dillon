@@ -1,0 +1,71 @@
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 90%;
+		line-height: 140%;
+	}
+
+	header {
+		height: 50px;
+	}
+
+	img.logo {
+		
+		height: 50px;
+	}
+
+	ul.menu {
+		width: 400px;
+		margin-top: 30px;
+		font-size: .6em;
+	}
+
+	ul#sub_items {
+		height: 25px;
+		font-size: .6em;
+	}
+	
+	ul#sub_items li a {
+		width: 80px;
+		height: 25px;
+	}
+
+	.home_wrapper {
+		width: 96%;
+		margin: 1em auto;
+	}
+
+	#inner_wrapper {
+		width: 96%;
+		margin: .5em auto;
+	}
+
+	.stack {
+		width: 23.5%;
+	}
+
+	.two_stack {
+		width: 98%;
+		margin-top: .3em;
+	}
+
+	.row_two {
+		width: 48%;
+		margin-top: .3em;
+	}
+
+	.stack {
+		display: none;
+	}
+
+	.flexx {
+		display: block;
+	}
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+}

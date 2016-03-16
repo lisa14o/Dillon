@@ -5,6 +5,44 @@
 	blue = #8CA8D9;
 */
 
+@font-face {
+    font-family: 'azedobold';
+    src: url('azedo-bold-webfont.eot');
+    src: url('azedo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('azedo-bold-webfont.woff2') format('woff2'),
+         url('azedo-bold-webfont.woff') format('woff'),
+         url('azedo-bold-webfont.ttf') format('truetype'),
+         url('azedo-bold-webfont.svg#azedobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'azedolight';
+    src: url('../fonts/azedo-light-webfont.eot');
+    src: url('../fonts/azedo-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/azedo-light-webfont.woff2') format('woff2'),
+         url('../fonts/azedo-light-webfont.woff') format('woff'),
+         url('../fonts/azedo-light-webfont.ttf') format('truetype'),
+         url('../fonts/azedo-light-webfont.svg#azedolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'baron_neueregular';
+    src: url('../fonts/baron_neue-webfont.eot');
+    src: url('../fonts/baron_neue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/baron_neue-webfont.woff2') format('woff2'),
+         url('../fonts/baron_neue-webfont.woff') format('woff'),
+         url('../fonts/baron_neue-webfont.ttf') format('truetype'),
+         url('../fonts/baron_neue-webfont.svg#baron_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 * {
 	padding: 0;
@@ -32,13 +70,13 @@ img {
 }
 
 h1 {
-	font-family: 'Azedo', light;
+	font-family: 'azedolight';
 	text-align: center;
 	color: #8CA8D9;
 }
 
 h2 {
-	font-family: 'Baron Neue';
+	font-family: 'azedolight';
 	color: #8CA8D9;
 	font-size: 1.5em;
 	padding-top: 1em;
@@ -51,7 +89,6 @@ img.logo {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	background-color: blue;
 	height: 70px;
 }
 
@@ -61,11 +98,10 @@ ul.menu {
 	display: -ms-flexbox;
 	display: flex;
 	width: 400px;
-	
 	margin-top: 40px;
-	font-family: 'Azedo', light;
-	font-size: 1em;
-	line-height: 1.5em;
+	font-family: 'baron_neueregular';
+	font-size: .8em;
+	
 }
 
 ul.menu li {
@@ -94,14 +130,12 @@ ul#sub_items {
 	display: flex;
 	width: 100%;
 	height: 30px;
-	font-family: 'Baron Neue';
+	font-family: 'baron_neueregular';
 	font-size: .8em;
 	border-bottom: 1px solid black;
 }
 
 ul#sub_items li {
-	width: 180px;
-	height:30px;
 	list-style-type: none;
 }
 
@@ -236,6 +270,60 @@ p.film_short {
 	text-align: justify;
 }
 
+.mixed_1 {
+	width: 48.5%;
+}
+
+.mixed_2, 
+.mixed_3 {
+	width: 23.5%;
+	height: 200px;
+}
+
+.row_two {
+	width: 48.5%;
+	margin-top: 1.3em;
+}
+
+.row_four {
+	width: 23%;
+	margin-top: 1.3em;
+}
+
+.row_four img {
+	width: 100%;
+}
+
+.two_stack {
+	width: 98%;
+	margin-top: 1.3em;
+}
+
+.rows {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.stack {
+	width: 23.5%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-flow: column;
+
+
+}
+
 .mixed_row {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -260,106 +348,9 @@ p.film_short {
 	        flex-flow: row wrap;
 }
 
-.mixed_1 {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	width: 48.5%;
-}
-
-.mixed_2, 
-.mixed_3 {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	width: 23.5%;
-	height: 200px;
-}
-
-.row_two {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	width: 48.5%;
-	margin-top: 1em;
-}
-
-.row_four {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	width: 24%;
-	height: 200px;
-	margin-top: 1em;
-}
-
-.row_five {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	width: 18%;
-	height: 130px;
-	margin-top: 1em;
-}
-
-.two_stack {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	width: 98%;
-	height: 200px;
-}
-
-.two_stack:last-of-type {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	width: 98%;
-	height: 200px;
-	margin-top: 1em;
-}
-
-.row {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	width: 100%;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-}
-
-.stack {
-	width: 24%;
-	margin-top: 1em;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-flex-flow: row wrap;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
+.flexx {
+	border: 2px solid #DA3134;
+	display: none;
 }
 
 .flex1 {
