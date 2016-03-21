@@ -260,7 +260,6 @@ img {
 	display: -ms-flexbox;
 	display: flex;
 	width: 500px;
-	height: auto;
 }
 
 p.film_short {
@@ -270,19 +269,13 @@ p.film_short {
 	text-align: justify;
 }
 
-.mixed_1 {
-	width: 48.5%;
-}
-
-.mixed_2, 
-.mixed_3 {
-	width: 23.5%;
-	height: 200px;
-}
-
 .row_two {
 	width: 48.5%;
 	margin-top: 1.3em;
+}
+
+.row_two img {
+	width: 100%;
 }
 
 .row_four {
@@ -292,6 +285,14 @@ p.film_short {
 
 .row_four img {
 	width: 100%;
+}
+
+.big_one {
+	display: none;
+}
+
+.big_two {
+	display: none;
 }
 
 .two_stack {
@@ -320,32 +321,37 @@ p.film_short {
 	-webkit-flex-direction: column;
 	    -ms-flex-direction: column;
 	        flex-flow: column;
-
-
 }
 
-.mixed_row {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+.still {
 	width: 100%;
-	margin-top: 1em;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-flex-flow: row wrap;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
+	margin-top: 1.3em;
+}
+
+.film_top {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.film_desc {
+	width: 50%;
+	padding-top: 2em;
+}
+
+.film_row h2 {
+	padding-top: 0;
+	width: 50%;
+}
+
+.side_img {
+	display: flex;
+	width: 46%;
+	margin-top: 1.3em;
+}
+
+.side_img img {
+	width: 100%;
 }
 
 .flexx {
@@ -393,14 +399,14 @@ p.excerpt {
 	display: flex;
 }
 
-iframe.home_player {
-	width: 100%;
-	height: 100px;	
-}
-
 iframe {
 	width: 100%;
 	height:710px;
+}
+
+iframe.home_player {
+	width: 100%;
+	height: 100px;	
 }
 
 .home_song {
@@ -416,8 +422,13 @@ iframe {
 
 .essay {
 	width: 80%;
-	margin: 1em auto;
+	margin: 2em auto 2em auto;
 	text-align: justify;
+}
+
+.essay h2 {
+	padding-top: 0;
+	text-align: center;
 }
 
 .essay p {
@@ -473,16 +484,15 @@ p.lyrics {
 
 .album_art {
 	width: 65%;
-	margin-top: 1em;
+	padding-top: 2em;
 }
 
-.inner_song {
-	margin-top: 1em;
+.album_art p {
+	padding-top: .8em;
 }
 
 .side_songs {
 	width: 33%;
-	margin-top: 1em;
 }
 
 .side_songs img {
