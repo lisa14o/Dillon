@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dillon's Music</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" >
+<link href="css/media.css" rel="stylesheet" type="text/css" >
+<script src="js/nav_hightlight.js"></script>
+<script src="js/base.min.js"></script>
+<script src="js/script.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+
+		<header>
+		<a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+		
+			<ul class="menu">
+				<li><a href="music.html">MUSIC</a></li>
+				<li><a href="drawing.html">DRAWING</a></li>
+				<li><a href="video.html">VIDEO</a></li>
+				<li><a href="writing.html">WRITING</a></li>
+			</ul>
+
+	</header>
+
+	<ul id="sub_items">
+		<li><a href="john_dillon.html">JOHN DILLON</a></li>
+		<li><a href="other_music.html">OTHER MUSIC</a></li>
+	</ul>
+	
+	<div id="inner_wrapper">
+		<div class="inner_about">
+			<h1>Tomten</h1>
+		</div><!--end inner about-->
+
+		<div class="album_art">
+			<img src="images/tomten_group.jpg" alt="tomten">
+			<p>“This young Seattle band’s second album is an impressive set of well-crafted indie-pop steeped in the music of ‘60s girl groups and British bands, with a variety of impeccably arranged songs featuring reverb guitars, organ, gorgeous harmonies, and catchy pop melodies.” –KEXP</p>
+
+			<p>“A charming stage presence, playful pop songs, and impressive musical skills. … they know how to put a show together, and one day soon, they’ll be at the top of festival bills. Go see them in the intimate venues while you can.” –The Stranger</p>
+
+			<p>“Telling you Tomten is one of the best young bands in Seattle is old news. These kids are Brit-pop aficionados … unassuming, gangly, adorable, and nothing short of pros. I could feel my jaded layers peeling with every perfectly executed harmony.” –Sound On The Sound</p>
+
+			<p>“With a supremely catchy, well-paced set that already sounds like a greatest hits collection, Tomten has the songcraft worthy of their chosen tradition.” –Seattle Weekly</p>
+		</div><!--end album art-->
+
+		<div class="side_songs">
+			<a href="https://tomtenmusic.bandcamp.com/" target="_blank"><img src="images/tomten.jpg" alt="Tomten Album"></a>
+			<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1761065266/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" seamless><a href="http://tomtenmusic.bandcamp.com/album/the-farewell-party">The Farewell Party by Tomten</a></iframe>
+			<p>pipe dreamin' boy</p>
+			<p>pipe dreamin' boy</p> 
+			<p>neither here, nor there it seems</p> 
+			<p>idling in the sunbeams</p>
+			<p>not one to know</p>
+			<p>but are you shallow?</p> 
+			<p>or maybe just a mess of doubts</p> 
+			<p>free, cos' it won't work out</p>
+
+			<p>pipe dreamin boy</p> 
+			<p>pipe dreamin boy </p>
+			<p>neither loud, nor clear </p>
+			<p>it seems </p>
+			<p>hiding in the slipstream</p> 
+			<p>and you're bound to go</p> 
+			<p>when north winds billow</p>
+			<p>time to set the world to rights </p>
+			<p>while others dim the lights </p>
+
+			<p>i've lost my touch</p> 
+			<p>i forgot to much </p>
+			<p>of who i am</p> 
+			<p>and what i hoped i would be</p> 
+			<p>pipe dreamin' me </p>
+			<p>pipe dreamin' me </p>
+			<p>pipe dreamin' me</p>
+		
+		</div><!--end side songs-->
+	</div>
+
+	</div><!--end home wrapper-->
+
+	<footer>
+		
+	</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<script src="js/plugins.min.js"></script>
+<script src="js/all.js"></script>
+<script src="js/improved.js"></script>
+<script>
+$(document).ready(function(e) {
+//$(document).bind('pageinit', function(){
+var $drawing = $('#sub_items');
+
+$('#sub_items').find('a').on('click', function(e){
+	e.preventDefault();
+
+	var $desc = $('#inner_wrapper');
+
+	switch ($(this).attr('href')) {
+		case 'john_dillon.html' :
+			$desc.load('fragments/john_dillon.html');
+			break;
+		case 'other_music.html' :
+			$desc.load('fragments/other_music.html');
+			break;
+	}
+
+});
+
+
+});
+
+
+</script>
+
+</body>
+</html>
